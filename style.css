@@ -23,6 +23,7 @@
 }
 body{
     min-height: 100vh;
+    overflow-x: hidden;
     font-family: 'Raleway','Open Sans', sans-serif;
 }
 h1{
@@ -81,15 +82,16 @@ header .container{
     margin-top: 2em;
     line-height: 1.4;
 }
-form{
+.fylo-hero-section form{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
     margin-top: 10px;
     margin-bottom: 8em;
 
 }
-input{
+ input{
+    width: 100%;
     padding: 0.7em;
     border: 1px solid var(--Very-Dark-Blue);
 }
@@ -291,9 +293,9 @@ footer .container{
     border-radius: 50%;
 }
 @media(max-width:768px){
-  
+
     .curve img{
-        display: none;
+        width: 100%;
     }
     hr{
         margin-left: 20px;
@@ -301,20 +303,34 @@ footer .container{
     .fylo-testimonial{
         width: 100%;
     }
+    .fylo-hero-section input{
+        width: 100%;
+    }
+  
+    .fylo-last-section form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        width: 80%;
+        margin-left: 1em;
+       
+    }
+    .fylo-last-section input{
+        padding: 1em;
+    }
+    .fylo-last-section button{
+        padding: 1.8em;
+        width: 100%;
+    }
+ 
 }
-@media(min-width:992px){
+@media(max-width:992px){
     .curve img{
         width: 100%;
     }
-    .fylo-last-section button{
-        width: 100%;
-        max-width: 60%;
-    }
 }
 @media only screen and (min-width: 1200px){
-  body{
-      overflow-x: hidden;
-  }
+ 
  
     header .container{
         width:100%;
@@ -367,14 +383,14 @@ footer .container{
     
     }
     .fylo-hero-section input{
-        margin-left: 0px;
-        width: 100%;
+        margin-left: 20px;
+        width: 90%;
         padding: 1em;
     }
     .fylo-hero-section button{
         margin-top: -45px;
         width: 40%;
-        margin-left: 470px;
+        margin-left: 435px;
         border-radius: 5px;
         padding: 1em;
     }
@@ -434,8 +450,9 @@ footer .container{
         width: 60%;
         padding: 1em;
     }
+    
     .btn{
-        width: 30%;
+        width: 35%;
         padding: 2em;
         margin-bottom: 5em;
         font-size: 0.6rem;
